@@ -1,0 +1,11 @@
+<h1>Convert <%= @currency_selection %> % </h1>
+
+Go <a href="/forex">back</a>.
+
+<ul>
+  <% @array_of_currencies.each do |currency_code| %>
+    <li>
+      Convert 1 <%= @currency_selection %> to <%= currency_code %>...
+    </li>
+  <% end %>
+</ul>
