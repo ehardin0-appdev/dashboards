@@ -3,9 +3,11 @@
 Go <a href="/">back</a>.
 
 <ul>
-  <% @array_of_currencies.each do |currency_code| %>
-    <li>
-      Convert 1 <%= currency_code %> to...
-    </li>
+  <% @array_of_currencies.each do |a_currency| %>
+  <li>
+    <a href="/forex/<%= a_currency %>">
+      Convert 1 <%= a_currency %> to...
+    </a>
+  </li>
   <% end %>
 </ul>
